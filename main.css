@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+button,
+input{
+    border: none;
+    background: none;
+    outline: none;
+}
+body{
+    background: #F0F0F0;
+}
+
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.header{
+    background: white;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    margin-bottom: 20px;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 170px;
+    
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+li a{
+    position: relative;
+    font-size: 21px;
+    color: black;
+}
+li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 0;
+    height: 2px;
+    background-color: #FF261C;
+    transition: width 0.3s ease-in-out; 
+}
+
+li a:hover::after {
+    width: 100%; 
+}
+.search{
+    width: 540px;
+    border-radius: 50px;
+    background: #F0F0F0;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search button img{
+    width: 22px;
+}
+.search input{
+    font-size: 18px;
+}
+.search input::placeholder{
+    color: rgba(0, 0, 0, 0.802);
+    font-style: italic;
+}
+
+.login{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.login select{
+    width: 45px;
+    height: 40px;
+    background: #FF261C;
+    border-radius: 19px;
+    border: none;
+    outline: none;
+    color: white;
+    appearance: none;         
+    -webkit-appearance: none;  
+    -moz-appearance: none;     
+    font-size: 21px;
+    font-weight: 600;
+    padding-left: 7px;
+    cursor: pointer;
+}
+.login button{
+    background: #FF261C;
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+/* Advertising */
+.advertising{
+    width: 100%;
+    height: 180px;
+    background: #FF261C;
+    margin-bottom: 20px;
+}
+
+/* Main */
+.main{
+    background: white;
+    border-radius: 35px;
+}
+.main_content{
+    padding: 60px 0;
+}
+.main_content h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.main_list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+}
+.main_list li{
+    padding: 20px 40px;
+    background: #F0F0F0;
+    font-size: 21px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Slide */
+.slide{
+    display: flex;
+    gap: 38px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.card{
+    width: 190px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.card img{
+    width: 190px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+.card p{
+    font-size: 24px;
+}
+
+.adv{
+    width: 90%;
+    height: 400px;
+    background: #29AD01;
+    margin: auto;
+    border-radius: 30px;
+    padding: 50px 150px;
+    margin-bottom: 130px;
+}
+.adv h2{
+    font-size: 145px;
+    color: white;
+}
+
+/* Category */
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+.ctgr_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.ctgr_card{
+    position: relative;
+    width: 430px;
+    height: 230px;
+    background: #F0F0F0;
+    border-radius: 50px;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.ctgr_card img{
+    position: absolute;
+    width: 270px;
+    right: 40px;
+    bottom: 4px;
+}
+.ctgr_box h3{
+    font-size: 37px;
+    font-style: italic;
+}
+.anth_box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.anth_card{
+    width: 245px;
+    height: 245px;
+    background: #F0F0F0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.anth_card img{
+    width: 85%;
+}
+.adv2{
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 30px;
+    margin: auto;
+}
+.adv2 img{
+    width: 100%;
+    position: absolute;
+    top: -160px;
+}
+
+/* footer */
+.footer_content{
+    padding: 30px 0;
+    display: flex;
+    gap: 150px;
+    margin-bottom: 70px;
+
+}
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer_info h3{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.footer_info a{
+    font-size: 25px;
+    color: black;
+}
+.line{
+    width: 100%;
+    border: 2px solid white;
+    margin-bottom: 30px;
+}
+.last_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.last_info p{
+    font-size: 25px;
+}
